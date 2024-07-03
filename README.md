@@ -48,13 +48,39 @@ Ensure you have the following installed:
 
 ```bash
 git clone https://github.com/sourabhsahu33/project-management-tool.git
-
+```
+```bash
 cd project-management-tool
 
 npm install
 # or
 yarn install
+```
 
+# Usage
+```
 npm start
 # or
 yarn start
+```
+# Folder Structure
+```
+project-management-tool/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Project.js
+│   │   ├── Task.js
+│   │   └── ...
+│   ├── redux/
+│   │   ├── actions/
+│   │   ├── reducers/
+│   │   └── store.js
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── ...
+```
