@@ -1,0 +1,185 @@
+/* Base Styles */
+body {
+    background-color: rgb(0, 0, 0);
+}
+.foo {
+    color: white;
+}
+.task-board-app {
+    padding: .5rem 1.5rem;
+    overflow-x: auto;
+}
+.task-board-app h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tektur', -apple-system, sans-serif;
+    font-size: 2.4rem;
+    line-height: normal;
+    color: white;
+}
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-info ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.header-info .github-icon {
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin-bottom: .2rem;
+}
+.header-info .github-icon a:hover {
+    cursor: pointer;
+}
+.header-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .75rem;
+    padding: .5rem 0;
+    margin: .5rem auto;
+}
+.header-inputs .controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+#column-sort-actions {
+    margin-left: 5px;
+    padding: 0.45rem 0.5rem;
+    border: 1px solid #d3d3d3;
+    font-size: 14px;
+    color: #333;
+    border-radius: 0.3rem;
+}
+.header-inputs .search-bar {
+    padding: 0.5rem 0.5rem;
+    padding-left: 2.1rem;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 0;
+    border-radius: 0.3rem;
+    font-size: 14px;
+    width: 25rem;
+    background-image: url("../../public/icons/magnifying-glass.svg");
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    background-position: 8px 8px;
+}
+.add-task-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a6bdd;
+    padding: .25rem .75rem;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+.add-task-btn:hover {
+    background: #1563cf;
+    cursor: pointer;
+}
+.add-task-btn:focus,
+.add-task-form .submit-btn:focus {
+    outline-color: #51b1ff;
+    background: #1563cf;
+}
+.add-task-btn span {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.task-board-app .light-control-btn {
+    background: #fff;
+    border: 1px solid lightgray;
+    color: #000;
+}
+.light-control-btn:hover {
+    background: rgb(240, 240, 240);
+}
+
+/* Tablet View (max-width: 992px) */
+@media (max-width: 992px) {
+    .task-board-app {
+        padding: .5rem;
+    }
+
+    .task-board-app h1 {
+        font-size: 2rem;
+    }
+
+    .header-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-info ul {
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+
+    .header-inputs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-inputs .search-bar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .add-task-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile View (max-width: 420px) */
+@media (max-width: 420px) {
+    .task-board-app {
+        padding: .25rem;
+    }
+
+    .task-board-app h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-info ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .header-inputs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-inputs .controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-inputs .search-bar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .add-task-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
